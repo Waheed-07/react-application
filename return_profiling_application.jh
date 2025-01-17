@@ -1,23 +1,23 @@
 application {
   config {
     baseName InvestorRiskReturnProfiling ,
-    applicationType microservice,
+    applicationType monolith,
     packageName com.investorriskreturnprofiling.aml,
     authenticationType jwt,
     prodDatabaseType postgresql,    
-     buildTool maven
+    buildTool maven,
+    clientFramework react,
+    clientPackageManager npm
+     
   }
   entities *
 }
 entity PersonalDetails{
     FullName String required
-    FateOfBirth Instant required
+    DateOfBirth Instant required
     Comments TextBlob
     CreatedAt Instant required
     UpdatedAt Instant
-    EmailAddress String
-    PhoneNumber String
-    Employer String
 }
 entity Country{
     Name String   
