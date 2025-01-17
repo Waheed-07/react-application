@@ -1,0 +1,85 @@
+application {
+  config {
+    baseName InvestorRiskReturnProfiling ,
+    applicationType microservice,
+    packageName com.investorriskreturnprofiling.aml,
+    authenticationType jwt,
+    prodDatabaseType postgresql,    
+     buildTool maven
+  }
+  entities *
+}
+entity PersonalDetails{
+    FullName String required
+    FateOfBirth Instant required
+    Comments TextBlob
+    CreatedAt Instant required
+    UpdatedAt Instant
+    EmailAddress String
+    PhoneNumber String
+    Employer String
+}
+entity Country{
+    Name String   
+}
+
+entity FinancialInformation{
+	AnnualIncome Double required
+    NetWorth Double required
+    CurrentSavings Double 
+  InvestmentExperience String required
+  SourceOfFunds String required
+  CreatedAt Instant required
+  UpdatedAt Instant
+}
+
+entity Profession{
+	Name String
+    ConceptUri String
+    IscoGroup String
+    Description TextBlob
+}
+entity Country{
+    Name String
+    IsoCode String
+}
+entity Address{
+    AddressLineOne String
+    AddressLineTwo String
+    PostalCode String
+    City String
+    Region String
+    CountryCode String
+}
+entity Currency {
+    Name String
+    Code String
+}
+entity Contact{
+    Contact String
+}
+entity Questions{
+  QuestionText String required
+  QuestionType String required
+  CreatedAt Instant required
+}
+entity UserResponses{
+  QuestionID Number
+  ResponseText String required
+  ResponseDate Instant required
+}
+entity Options{
+ 	OptionText String required
+}
+
+relationship ManyToOne{
+PersonalDetails{person(Name)} to Contact
+Questions{questions(Questions)} to Options
+
+}
+
+
+service * with serviceClass
+dto all with mapstruct
+
+    
