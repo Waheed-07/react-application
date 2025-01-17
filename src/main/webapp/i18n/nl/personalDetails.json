@@ -1,0 +1,28 @@
+{
+  "investorRiskReturnProfilingApp": {
+    "personalDetails": {
+      "home": {
+        "title": "Personal Details",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Maak een nieuwe Personal Details",
+        "createOrEditLabel": "Maak of wijzig een Personal Details",
+        "notFound": "No Personal Details found"
+      },
+      "created": "A new Personal Details is created with identifier {{ param }}",
+      "updated": "A Personal Details is updated with identifier {{ param }}",
+      "deleted": "A Personal Details is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Bent u zeker dat u Personal Details {{ id }} wilt verwijderen?"
+      },
+      "detail": {
+        "title": "Personal Details"
+      },
+      "id": "ID",
+      "fullName": "Full Name",
+      "dateOfBirth": "Date Of Birth",
+      "comments": "Comments",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At"
+    }
+  }
+}

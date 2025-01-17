@@ -91,7 +91,7 @@ management:
 
 spring:
   application:
-    name: reactapp
+    name: InvestorRiskReturnProfiling
   docker:
     compose:
       enabled: true
@@ -151,13 +151,13 @@ spring:
           authorities-claim-name: auth
   task:
     execution:
-      thread-name-prefix: reactapp-task-
+      thread-name-prefix: investor-risk-return-profiling-task-
       pool:
         core-size: 2
         max-size: 50
         queue-capacity: 10000
     scheduling:
-      thread-name-prefix: reactapp-scheduling-
+      thread-name-prefix: investor-risk-return-profiling-scheduling-
       pool:
         size: 2
   thymeleaf:
@@ -188,7 +188,7 @@ info:
 
 jhipster:
   clientApp:
-    name: 'reactappApp'
+    name: 'investorRiskReturnProfilingApp'
   # By default CORS is disabled. Uncomment to enable.
   # cors:
   #   allowed-origins: "http://localhost:8100,http://localhost:9000"
@@ -198,12 +198,12 @@ jhipster:
   #   allow-credentials: true
   #   max-age: 1800
   mail:
-    from: reactapp@localhost
+    from: InvestorRiskReturnProfiling@localhost
   api-docs:
     default-include-pattern: /api/**
     management-include-pattern: /management/**
-    title: Reactapp API
-    description: Reactapp API documentation
+    title: Investor Risk Return Profiling API
+    description: Investor Risk Return Profiling API documentation
     version: 0.0.1
     terms-of-service-url:
     contact-name:

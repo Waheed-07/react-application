@@ -1,0 +1,17 @@
+{
+  "annotations": {
+    "changelogDate": "20250117165056"
+  },
+  "applications": ["InvestorRiskReturnProfiling"],
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Country",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceClass"
+}

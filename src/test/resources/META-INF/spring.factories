@@ -1,2 +1,4 @@
 org.springframework.test.context.ContextCustomizerFactory = \
-    com.dsi.myapp.config.SqlTestContainersSpringContextCustomizerFactory
+    com.dsi.myapp.config.SqlTestContainersSpringContextCustomizerFactory,com.\
+    investorriskreturnprofiling.aml.config.\
+    SqlTestContainersSpringContextCustomizerFactory

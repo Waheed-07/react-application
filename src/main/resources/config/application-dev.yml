@@ -18,7 +18,7 @@ logging:
     ROOT: DEBUG
     tech.jhipster: DEBUG
     org.hibernate.SQL: DEBUG
-    com.dsi.myapp: DEBUG
+    com.investorriskreturnprofiling.aml: DEBUG
 
 spring:
   devtools:
@@ -32,8 +32,8 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://localhost:5432/reactapp
-    username: reactapp
+    url: jdbc:postgresql://localhost:5432/InvestorRiskReturnProfiling
+    username: InvestorRiskReturnProfiling
     password:
     hikari:
       poolName: Hikari

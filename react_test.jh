@@ -1,0 +1,26 @@
+application {
+  config {
+    baseName InvestorRiskReturnProfiling,
+    applicationType monolith,
+    packageName com.investorriskreturnprofiling.aml,
+    authenticationType jwt,
+    prodDatabaseType postgresql,    
+    buildTool maven,
+    clientFramework react
+  }
+  entities *
+}
+entity PersonalDetails{
+    FullName String required
+    DateOfBirth Instant required
+    Comments TextBlob
+    CreatedAt Instant required
+    UpdatedAt Instant
+}
+entity Country{
+    Name String   
+}
+service * with serviceClass
+dto all with mapstruct
+
+    
