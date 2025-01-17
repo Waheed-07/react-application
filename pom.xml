@@ -3,12 +3,12 @@
                              https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.dsi.myapp</groupId>
-    <artifactId>reactapp</artifactId>
+    <groupId>com.investorriskreturnprofiling.aml</groupId>
+    <artifactId>investor-risk-return-profiling</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>Reactapp</name>
-    <description>Description for Reactapp</description>
+    <name>Investor Risk Return Profiling</name>
+    <description>Description for Investor Risk Return Profiling</description>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -31,7 +31,7 @@
         <maven.build.timestamp.format>yyyyMMddHHmmss</maven.build.timestamp.format>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <start-class>com.dsi.myapp.ReactappApp</start-class>
+        <start-class>com.investorriskreturnprofiling.aml.InvestorRiskReturnProfilingApp</start-class>
         <argLine>-Djava.security.egd=file:/dev/./urandom -Xmx1G</argLine>
         <m2e.apt.activation>jdt_apt</m2e.apt.activation>
         <run.addResources>false</run.addResources>
@@ -617,7 +617,7 @@
                             </platforms>
                         </from>
                         <to>
-                            <image>reactapp:latest</image>
+                            <image>investorriskreturnprofiling:latest</image>
                         </to>
                         <container>
                             <entrypoint>
@@ -767,7 +767,7 @@
                         <defaultSchemaName/>
                         <username>${liquibase-plugin.username}</username>
                         <password>${liquibase-plugin.password}</password>
-                        <referenceUrl>hibernate:spring:com.dsi.myapp.domain?dialect=org.hibernate.dialect.PostgreSQLDialect&amp;hibernate.physical_naming_strategy=org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
+                        <referenceUrl>hibernate:spring:com.investorriskreturnprofiling.aml.domain?dialect=org.hibernate.dialect.PostgreSQLDialect&amp;hibernate.physical_naming_strategy=org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy&amp;hibernate.implicit_naming_strategy=org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy</referenceUrl>
                         <verbose>true</verbose>
                         <logging>debug</logging>
                         <contexts>!test</contexts>
@@ -819,8 +819,8 @@
             <properties>
                 <!-- default Spring profiles -->
                 <liquibase-plugin.password/>
-                <liquibase-plugin.url>jdbc:postgresql://localhost:5432/reactapp</liquibase-plugin.url>
-                <liquibase-plugin.username>reactapp</liquibase-plugin.username>
+                <liquibase-plugin.url>jdbc:postgresql://localhost:5432/InvestorRiskReturnProfiling</liquibase-plugin.url>
+                <liquibase-plugin.username>InvestorRiskReturnProfiling</liquibase-plugin.username>
                 <profile.test>test,testdev</profile.test>
                 <spring.profiles.active>dev${profile.tls}${profile.no-liquibase}</spring.profiles.active>
             </properties>
@@ -940,8 +940,8 @@
             <properties>
                 <!-- default Spring profiles -->
                 <liquibase-plugin.password/>
-                <liquibase-plugin.url>jdbc:postgresql://localhost:5432/reactapp</liquibase-plugin.url>
-                <liquibase-plugin.username>reactapp</liquibase-plugin.username>
+                <liquibase-plugin.url>jdbc:postgresql://localhost:5432/InvestorRiskReturnProfiling</liquibase-plugin.url>
+                <liquibase-plugin.username>InvestorRiskReturnProfiling</liquibase-plugin.username>
                 <profile.test>test,testprod</profile.test>
                 <spring.profiles.active>prod${profile.api-docs}${profile.tls}${profile.e2e}${profile.no-liquibase}</spring.profiles.active>
             </properties>
